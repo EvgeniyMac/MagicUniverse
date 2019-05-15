@@ -9,12 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
+    
 
-
+    
+    // MARK: Hide Status bar
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+        
 }
+
+// myLabelView constraints
+
 
