@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D51ECA53B46ACC1A8152890 /* Pods_MagicUniverseTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406A922F03457C9F53B40D91 /* Pods_MagicUniverseTest.framework */; };
 		81FDB04B228C4C6400F28F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDB04A228C4C6400F28F98 /* AppDelegate.swift */; };
 		81FDB04D228C4C6400F28F98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDB04C228C4C6400F28F98 /* ViewController.swift */; };
 		81FDB050228C4C6400F28F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FDB04E228C4C6400F28F98 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38B7872DD812B73B9FBBA543 /* Pods-MagicUniverseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicUniverseTest.debug.xcconfig"; path = "Target Support Files/Pods-MagicUniverseTest/Pods-MagicUniverseTest.debug.xcconfig"; sourceTree = "<group>"; };
+		406A922F03457C9F53B40D91 /* Pods_MagicUniverseTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicUniverseTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FDB047228C4C6400F28F98 /* MagicUniverseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicUniverseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FDB04A228C4C6400F28F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FDB04C228C4C6400F28F98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		81FDB051228C4C6600F28F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81FDB054228C4C6600F28F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81FDB056228C4C6600F28F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FD4C92B8D98BC00A449F37 /* Pods-MagicUniverseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicUniverseTest.release.xcconfig"; path = "Target Support Files/Pods-MagicUniverseTest/Pods-MagicUniverseTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D51ECA53B46ACC1A8152890 /* Pods_MagicUniverseTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BA8E5A48F443D65633823C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38B7872DD812B73B9FBBA543 /* Pods-MagicUniverseTest.debug.xcconfig */,
+				D6FD4C92B8D98BC00A449F37 /* Pods-MagicUniverseTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		81FDB03E228C4C6400F28F98 = {
 			isa = PBXGroup;
 			children = (
 				81FDB049228C4C6400F28F98 /* MagicUniverseTest */,
 				81FDB048228C4C6400F28F98 /* Products */,
+				6BA8E5A48F443D65633823C5 /* Pods */,
+				ED0A5C4DDE9FC44B8B1EBE56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = MagicUniverseTest;
 			sourceTree = "<group>";
 		};
+		ED0A5C4DDE9FC44B8B1EBE56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				406A922F03457C9F53B40D91 /* Pods_MagicUniverseTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81FDB059228C4C6600F28F98 /* Build configuration list for PBXNativeTarget "MagicUniverseTest" */;
 			buildPhases = (
+				905FE8DCCCE53978CC5F6343 /* [CP] Check Pods Manifest.lock */,
 				81FDB043228C4C6400F28F98 /* Sources */,
 				81FDB044228C4C6400F28F98 /* Frameworks */,
 				81FDB045228C4C6400F28F98 /* Resources */,
+				B699CED5DEF4D29550FE92E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		905FE8DCCCE53978CC5F6343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagicUniverseTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B699CED5DEF4D29550FE92E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MagicUniverseTest/Pods-MagicUniverseTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YoutubePlayer-in-WKWebView/YoutubePlayer_in_WKWebView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YoutubePlayer_in_WKWebView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MagicUniverseTest/Pods-MagicUniverseTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81FDB043228C4C6400F28F98 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		81FDB05A228C4C6600F28F98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B7872DD812B73B9FBBA543 /* Pods-MagicUniverseTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +374,7 @@
 		};
 		81FDB05B228C4C6600F28F98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FD4C92B8D98BC00A449F37 /* Pods-MagicUniverseTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
