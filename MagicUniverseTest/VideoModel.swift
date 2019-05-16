@@ -6,9 +6,26 @@
 //  Copyright © 2019 Evgeniy Suprun. All rights reserved.
 //
 
+import Foundation
 import UIKit
-import YoutubePlayer_in_WKWebView
 
-class VideoModel: NSObject {
-
+struct VideoModel {
+    
+    var mainCell : String
+  
+    
+    
+//    static func fetchSushi() -> [VideoModel] {
+//        let firstItem = VideoModel(mainCell: "ETi99JQIHVg")!,
+//                                   sushiName: "Jengibre",
+//                                   smallDescription: "Original Japanese",
+//                                   cost: 8)
+//        let secondItem = SushiModel(mainImage: UIImage(named: "sushi2")!,
+//                                    sushiName: "Caviar",
+//                                    smallDescription: "Original Japanese",
+////                                    cost: 10)
+//   
+//        
+//        return [firstItem, secondItem, thirdItem, fouthItem, five, six, seven, eight]
+//    }
 }
