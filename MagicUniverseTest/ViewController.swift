@@ -66,7 +66,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
 }
-    // MARK: Hide Status bar - FIX-ME
+    // MARK: Hide Status bar 
     override var prefersStatusBarHidden: Bool {
         return true
   }

@@ -12,6 +12,7 @@
 		811C769B228CD47D00BB5601 /* VideoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811C769A228CD47D00BB5601 /* VideoCollectionCell.swift */; };
 		811C769D228CD4CC00BB5601 /* VideoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811C769C228CD4CC00BB5601 /* VideoCollectionView.swift */; };
 		811C769F228CDE5600BB5601 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811C769E228CDE5600BB5601 /* VideoModel.swift */; };
+		812935C9228E8FCF000D4300 /* SecondCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812935C8228E8FCF000D4300 /* SecondCollectionView.swift */; };
 		81FDB04B228C4C6400F28F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDB04A228C4C6400F28F98 /* AppDelegate.swift */; };
 		81FDB050228C4C6400F28F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FDB04E228C4C6400F28F98 /* Main.storyboard */; };
 		81FDB052228C4C6600F28F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FDB051228C4C6600F28F98 /* Assets.xcassets */; };
@@ -24,7 +25,8 @@
 		811C7698228CD10200BB5601 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		811C769A228CD47D00BB5601 /* VideoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionCell.swift; sourceTree = "<group>"; };
 		811C769C228CD4CC00BB5601 /* VideoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionView.swift; sourceTree = "<group>"; };
-		811C769E228CDE5600BB5601 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		811C769E228CDE5600BB5601 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoModel.swift; path = ../VideoModel.swift; sourceTree = "<group>"; };
+		812935C8228E8FCF000D4300 /* SecondCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondCollectionView.swift; path = /Users/evgeniysuprun/Desktop/MagicUniverseTest/MagicUniverseTest/SecondCollectionView.swift; sourceTree = "<absolute>"; };
 		81FDB047228C4C6400F28F98 /* MagicUniverseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicUniverseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FDB04A228C4C6400F28F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FDB04F228C4C6400F28F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		812935C5228E762F000D4300 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				811C769E228CDE5600BB5601 /* VideoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		81FDB03E228C4C6400F28F98 = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +90,10 @@
 				811C7698228CD10200BB5601 /* ViewController.swift */,
 				811C769A228CD47D00BB5601 /* VideoCollectionCell.swift */,
 				811C769C228CD4CC00BB5601 /* VideoCollectionView.swift */,
-				811C769E228CDE5600BB5601 /* VideoModel.swift */,
-				81FDB04E228C4C6400F28F98 /* Main.storyboard */,
+				812935C8228E8FCF000D4300 /* SecondCollectionView.swift */,
+				812935C5228E762F000D4300 /* Model */,
 				81FDB051228C4C6600F28F98 /* Assets.xcassets */,
+				81FDB04E228C4C6400F28F98 /* Main.storyboard */,
 				81FDB053228C4C6600F28F98 /* LaunchScreen.storyboard */,
 				81FDB056228C4C6600F28F98 /* Info.plist */,
 			);
@@ -219,6 +230,7 @@
 			files = (
 				811C7699228CD10200BB5601 /* ViewController.swift in Sources */,
 				811C769B228CD47D00BB5601 /* VideoCollectionCell.swift in Sources */,
+				812935C9228E8FCF000D4300 /* SecondCollectionView.swift in Sources */,
 				811C769D228CD4CC00BB5601 /* VideoCollectionView.swift in Sources */,
 				811C769F228CDE5600BB5601 /* VideoModel.swift in Sources */,
 				81FDB04B228C4C6400F28F98 /* AppDelegate.swift in Sources */,
