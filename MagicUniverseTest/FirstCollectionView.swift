@@ -9,10 +9,8 @@
 import UIKit
 
 
-class VideoCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
+class FirstCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
     
-    
-    let cells = ["ETi99JQIHVg","ETi99JQIHVg","ETi99JQIHVg","ETi99JQIHVg"]
     
     
     init() {
@@ -21,7 +19,7 @@ class VideoCollectionView: UICollectionView, UICollectionViewDelegate, UICollect
         layout.scrollDirection = .horizontal
 
         super.init(frame: .zero, collectionViewLayout: layout)
-        backgroundColor = #colorLiteral(red: 0.113761507, green: 0.1048973277, blue: 0.150441885, alpha: 1)
+        backgroundColor = #colorLiteral(red: 0.1137254902, green: 0.1058823529, blue: 0.1490196078, alpha: 1)
         
         delegate = self
         dataSource = self
