@@ -12,7 +12,6 @@ import UIKit
 class ViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var youTubeLabel: UILabel!
-
     
     private var collectionViewFirst = FirstCollectionView()
     private var collectionViewSecond = SecondCollectionView()
@@ -25,7 +24,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     var scrollingTimer = Timer()
     var counter = 0
-    
+    var presentControllerButton = UIButton.init(type: UIButton.ButtonType.system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +48,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         thirdCollectionLabel.translatesAutoresizingMaskIntoConstraints = false
         thirdCollectionLabel.textColor = .white
         thirdCollectionLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-           
         
         
         view.backgroundColor = #colorLiteral(red: 0.113761507, green: 0.1048973277, blue: 0.150441885, alpha: 1)
@@ -114,7 +112,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
 }
-    // MARK: Hide Status bar 
+    
+//    // Show Modal ViewControler
+//
+//    @objc func presentModalViewController() {
+//        let modal = ModalViewController()
+//        let transitionDelegate = SPStorkTransitioningDelegate()
+//        modal.transitioningDelegate = transitionDelegate
+//        modal.modalPresentationStyle = .custom
+//        self.present(modal, animated: true, completion: nil)
+//    }
+    // MARK: Hide Status bar
     override var prefersStatusBarHidden: Bool {
         return true
   }

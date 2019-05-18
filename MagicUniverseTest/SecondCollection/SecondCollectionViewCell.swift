@@ -16,11 +16,12 @@ class SecondCollectionViewCell: UICollectionViewCell {
     // FIX IT!!!
     struct YouTubeConstant {
         static let playerVars = [
-            "playsinline": "1" as AnyObject,
-            "controls": "1" as AnyObject,
-            "showinfo": "0" as AnyObject,
-            "origin" : "http://www.youtube.com" as AnyObject
-        ]
+            "modesbranding": 1,
+            "playsinline": 1,
+            "controls": 1,
+            "showinfo": 1,
+            "origin" : "http://www.youtube.com"
+            ] as [String : Any]
     }
 
     static let reuseIdSecond = "SecondCollectionCell"
