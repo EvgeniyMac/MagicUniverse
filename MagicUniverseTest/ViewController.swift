@@ -11,29 +11,40 @@ import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
 
-    @IBOutlet weak var youTubeLabel: UILabel!
+  
+
     
     private var collectionViewFirst = FirstCollectionView()
     private var collectionViewSecond = SecondCollectionView()
     private var collectionViewThird = ThirdCollectionView()
     private var cellsVideo = VideoCollectionCell()
     
+    var scrollView = UIScrollView()
+    let youTubeLabel = UILabel()
     let pagecontrol = UIPageControl()
     let secondCollectionLabel = UILabel()
     let thirdCollectionLabel = UILabel()
     
     var scrollingTimer = Timer()
     var counter = 0
-    var presentControllerButton = UIButton.init(type: UIButton.ButtonType.system)
+    //var presentControllerButton = UIButton.init(type: UIButton.ButtonType.system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: view.bounds.size.height))
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 1.1)
+  
+        
+        youTubeLabel.text = "YouTube API"
+        youTubeLabel.translatesAutoresizingMaskIntoConstraints = false
+        youTubeLabel.textColor = .white
+        youTubeLabel.font = UIFont.systemFont(ofSize: 40, weight: .bold)
+        
         pagecontrol.numberOfPages = cellsVideo.cells.count
         pagecontrol.translatesAutoresizingMaskIntoConstraints = false
         pagecontrol.currentPage = 0
-        collectionViewFirst.isPagingEnabled = true
+        
         
         scrollingTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(autoChangeImage), userInfo: nil, repeats: true)
         
@@ -51,17 +62,27 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         
         view.backgroundColor = #colorLiteral(red: 0.113761507, green: 0.1048973277, blue: 0.150441885, alpha: 1)
-        view.addSubview(pagecontrol)
-        view.addSubview(collectionViewFirst)
-        view.addSubview(secondCollectionLabel)
-        view.addSubview(collectionViewSecond)
-        view.addSubview(thirdCollectionLabel)
-        view.addSubview(collectionViewThird)
+      //  scrollView.addSubview(youTubeLabel)
+        scrollView.addSubview(youTubeLabel)
+        scrollView.addSubview(collectionViewFirst)
+        scrollView.addSubview(pagecontrol)
+        scrollView.addSubview(secondCollectionLabel)
+        scrollView.addSubview(collectionViewSecond)
+        scrollView.addSubview(thirdCollectionLabel)
+        scrollView.addSubview(collectionViewThird)
+        view.addSubview(scrollView)
+        
+
+        // MARK: YouTubeLabel constraints
+        
+         youTubeLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+         youTubeLabel.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 18).isActive = true
+
         
         // MARK: First Collection View Constraints
         collectionViewFirst.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         collectionViewFirst.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        collectionViewFirst.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        collectionViewFirst.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         collectionViewFirst.topAnchor.constraint(equalTo: youTubeLabel.bottomAnchor, constant: 10).isActive = true
         collectionViewFirst.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
@@ -113,15 +134,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
 }
     
-//    // Show Modal ViewControler
-//
-//    @objc func presentModalViewController() {
-//        let modal = ModalViewController()
-//        let transitionDelegate = SPStorkTransitioningDelegate()
-//        modal.transitioningDelegate = transitionDelegate
-//        modal.modalPresentationStyle = .custom
-//        self.present(modal, animated: true, completion: nil)
-//    }
+
     // MARK: Hide Status bar
     override var prefersStatusBarHidden: Bool {
         return true

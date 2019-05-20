@@ -26,6 +26,7 @@ class SecondCollectionView: UICollectionView, UICollectionViewDelegate, UICollec
         
         register(SecondCollectionViewCell.self, forCellWithReuseIdentifier: SecondCollectionViewCell.reuseIdSecond)
         
+        
         translatesAutoresizingMaskIntoConstraints = false
         showsHorizontalScrollIndicator = false
         

@@ -28,6 +28,7 @@ class FirstCollectionView: UICollectionView, UICollectionViewDelegate, UICollect
         
         translatesAutoresizingMaskIntoConstraints = false
         showsHorizontalScrollIndicator = false
+        isPagingEnabled = true
         
     }
     
@@ -50,7 +51,7 @@ class FirstCollectionView: UICollectionView, UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 10
     }
     
  
