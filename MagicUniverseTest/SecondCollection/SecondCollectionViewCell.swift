@@ -24,7 +24,7 @@ class SecondCollectionViewCell: UICollectionViewCell {
             ] as [String : Any]
     }
 
-    static let reuseIdSecond = "SecondCollectionCell"
+   static let reuseIdSecond = "SecondCollectionCell"
     
     let secondImageView: WKYTPlayerView = {
         let image = WKYTPlayerView()

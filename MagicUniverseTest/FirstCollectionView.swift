@@ -10,8 +10,8 @@ import UIKit
 
 
 class FirstCollectionView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
-    
-    
+  
+     
     
     init() {
         
@@ -34,14 +34,17 @@ class FirstCollectionView: UICollectionView, UICollectionViewDelegate, UICollect
     
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        
+        let cellCount = 4
+
+        return cellCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionCell.reuseId, for: indexPath)
       
-
+    
         return cell
     }
     

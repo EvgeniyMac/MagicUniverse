@@ -6,7 +6,7 @@ target 'MagicUniverseTest' do
   use_frameworks!
 
   # Pods for MagicUniverseTest
-
-pod "YoutubePlayer-in-WKWebView", "~> 0.3.0"
+ 
+   pod "YoutubePlayer-in-WKWebView", "~> 0.3.0"
 
 end

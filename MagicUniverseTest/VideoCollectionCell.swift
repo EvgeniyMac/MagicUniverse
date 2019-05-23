@@ -9,19 +9,17 @@
 import UIKit
 import YoutubePlayer_in_WKWebView
 
-class VideoCollectionCell: UICollectionViewCell {
+class VideoCollectionCell: UICollectionViewCell, WKYTPlayerViewDelegate {
     
-     let cells = ["ETi99JQIHVg","ETi99JQIHVg","ETi99JQIHVg","ETi99JQIHVg"]
+    let cells = ["ETi99JQIHVg","ETi99JQIHVg","ETi99JQIHVg","ETi99JQIHVg"]
     
     struct YouTubeConstant {
         static let playerVars = [
-            "autoplay": 1,
-            "playsinline": 1,
-            "controls": 0,
-            "showinfo": 0,
-            "autohide": 1
-            // "origin" : "http://www.youtube.com" as AnyObject
-        ] as [String : Any]
+            "playsinline": "1" as AnyObject,
+            "controls": "1" as AnyObject,
+            "showinfo": "0" as AnyObject,
+            "origin" : "http://www.youtube.com" as AnyObject
+        ]
     }
     
     static let reuseId = "VideoCollectionCell"

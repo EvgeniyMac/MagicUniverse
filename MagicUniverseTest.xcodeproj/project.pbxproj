@@ -16,6 +16,7 @@
 		812935D1228EB2FD000D4300 /* ThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812935D0228EB2FD000D4300 /* ThirdCollectionViewCell.swift */; };
 		812935D5228EB37F000D4300 /* ThirdCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812935D4228EB37F000D4300 /* ThirdCollectionView.swift */; };
 		812935DA228EF861000D4300 /* SecondCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812935D9228EF861000D4300 /* SecondCollectionView.swift */; };
+		8137404F2292FB39003DDCDE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137404E2292FB39003DDCDE /* ModalViewController.swift */; };
 		81FDB04B228C4C6400F28F98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDB04A228C4C6400F28F98 /* AppDelegate.swift */; };
 		81FDB050228C4C6400F28F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FDB04E228C4C6400F28F98 /* Main.storyboard */; };
 		81FDB052228C4C6600F28F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FDB051228C4C6600F28F98 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		812935D0228EB2FD000D4300 /* ThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCollectionViewCell.swift; sourceTree = "<group>"; };
 		812935D4228EB37F000D4300 /* ThirdCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCollectionView.swift; sourceTree = "<group>"; };
 		812935D9228EF861000D4300 /* SecondCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionView.swift; sourceTree = "<group>"; };
+		8137404E2292FB39003DDCDE /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		81FDB047228C4C6400F28F98 /* MagicUniverseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicUniverseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FDB04A228C4C6400F28F98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FDB04F228C4C6400F28F98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		812935D6228EF698000D4300 /* ModalView */ = {
 			isa = PBXGroup;
 			children = (
+				8137404E2292FB39003DDCDE /* ModalViewController.swift */,
 			);
 			path = ModalView;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 				81FDB043228C4C6400F28F98 /* Sources */,
 				81FDB044228C4C6400F28F98 /* Frameworks */,
 				81FDB045228C4C6400F28F98 /* Resources */,
-				B699CED5DEF4D29550FE92E0 /* [CP] Embed Pods Frameworks */,
+				CC455DA9663608157BD33B33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,7 +235,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B699CED5DEF4D29550FE92E0 /* [CP] Embed Pods Frameworks */ = {
+		CC455DA9663608157BD33B33 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,6 +270,7 @@
 				812935D1228EB2FD000D4300 /* ThirdCollectionViewCell.swift in Sources */,
 				812935CF228EA42A000D4300 /* SecondCollectionViewCell.swift in Sources */,
 				812935DA228EF861000D4300 /* SecondCollectionView.swift in Sources */,
+				8137404F2292FB39003DDCDE /* ModalViewController.swift in Sources */,
 				811C769D228CD4CC00BB5601 /* FirstCollectionView.swift in Sources */,
 				811C769F228CDE5600BB5601 /* VideoModel.swift in Sources */,
 				81FDB04B228C4C6400F28F98 /* AppDelegate.swift in Sources */,
